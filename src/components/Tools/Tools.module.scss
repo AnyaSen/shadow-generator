@@ -1,0 +1,11 @@
+@import "../../assets/scss/variables";
+
+.ToolsContainer {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 49.6%;
+  height: 85vh;
+  z-index: 1;
+  box-shadow: $shadow-2;
+}

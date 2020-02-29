@@ -1,0 +1,7 @@
+@import "../../../assets/scss/variables";
+
+.PropertiesContainer {
+  flex-grow: 1;
+  padding: $space-5 $space-3;
+  overflow-y: auto;
+}

@@ -1,0 +1,14 @@
+@import "../../../assets/scss/variables";
+
+.ToolsNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background-color: $color-white;
+  padding: 0 $space-3;
+  box-shadow: $shadow-2;
+  width: 45.3%;
+}

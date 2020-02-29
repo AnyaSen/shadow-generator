@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function ShadoxBox() {
+import Styles from "./ShadowBox.module.scss";
+
+export default function ShadowBox() {
   return (
-    <div>
-      <h1>Shadow Box</h1>
+    <div className={Styles.ShadowBoxContainer}>
+      <div className={Styles.ShadowBox}></div>
     </div>
   );
 }

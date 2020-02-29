@@ -1,0 +1,11 @@
+@import "../../../../assets/scss/variables";
+
+.PropertyNav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 $space-3;
+  img {
+    height: 4rem;
+  }
+}

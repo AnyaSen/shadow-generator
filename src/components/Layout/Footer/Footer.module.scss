@@ -1,0 +1,19 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/breakpoints";
+
+.Footer {
+  background-color: $color-tapestry;
+  color: $color-white;
+  display: flex;
+  padding: $space-3 $space-2;
+  justify-content: center;
+  width: 100%;
+
+  a {
+    text-decoration: underline;
+  }
+
+  @include sm {
+    padding: $space-2;
+  }
+}

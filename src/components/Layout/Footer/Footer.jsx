@@ -1,9 +1,20 @@
 import React from "react";
 
+import Styles from "./Footer.module.scss";
+
 export default function Footer() {
   return (
-    <div>
-      <h1>Footer</h1>
+    <div className={Styles.Footer}>
+      <p>
+        Created by{" "}
+        <a
+          href="https://portfolio-anna-senchikhina.netlify.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Anna Senchikhina
+        </a>
+      </p>
     </div>
   );
 }

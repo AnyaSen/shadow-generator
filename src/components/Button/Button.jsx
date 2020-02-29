@@ -1,9 +1,7 @@
 import React from "react";
 
+import Styles from "./Button.module.scss";
+
 export default function Button() {
-  return (
-    <div>
-      <h1>Button</h1>
-    </div>
-  );
+  return <button className={Styles.Button}>Generate Code</button>;
 }
