@@ -1,0 +1,27 @@
+$base_unit: 0.5rem;
+
+$font-xs: $base_unit * 2.5; // 1.25rem
+$font-sm: $base_unit * 3; // 1.5rem
+$font-md: $base_unit * 5.5; // 2.75rem
+$font-lg: $base_unit * 7; // 3.5rem
+$font-xl: $base_unit * 9; // 4.5rem
+
+$space-0: $base_unit * 1; // 0.5rem
+$space-1: $base_unit * 2; // 1rem
+$space-2: $base_unit * 3; // 1.5rem
+$space-3: $base_unit * 4; // 2rem
+$space-4: $base_unit * 5; // 2.5rem
+$space-5: $base_unit * 6; // 3rem
+$space-6: $base_unit * 7; // 3.5rem
+$space-7: $base_unit * 8; // 4rem
+
+$color-tapestry: #ad5876;
+$color-dark-tapestry: #6c2b42;
+$color-rose: #bc768f;
+$color-mulberry: #bf507b;
+$color-grey: #dbdbdb;
+$color-text-color: #333333;
+
+$shadow-1: 0px 0px 12px 0px rgba(182, 182, 182, 0.75);
+
+$border-radius: $base_unit;
