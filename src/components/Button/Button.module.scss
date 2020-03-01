@@ -3,4 +3,5 @@
 
 .Button {
   @include button($color-rose, $color-mulberry);
+  width: fit-content;
 }
