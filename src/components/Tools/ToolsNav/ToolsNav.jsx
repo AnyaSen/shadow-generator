@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Styles from "./ToolsNav.module.scss";
 
-import Button from "../../Button/Button";
+import Button from "../../Buttons/Button/Button";
 
 export default function ToolsNav() {
   return (
