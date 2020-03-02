@@ -1,11 +1,11 @@
 @import "../../assets/scss/variables";
 @import "../../assets/scss/breakpoints";
 
-@mixin button($bg-color, $bg-hover-color) {
+@mixin button($bg-color, $bg-hover-color, $color) {
   padding: $space-1 $space-2;
   font-size: $font-sm;
   font-family: inherit;
-  color: $color-white;
+  color: $color;
   background-color: $bg-color;
   margin: $space-2;
 

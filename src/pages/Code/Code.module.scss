@@ -1,0 +1,19 @@
+@import "../../assets/scss/variables";
+
+.CodePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .CodeContainer {
+    border: 0.1rem solid $color-mulberry;
+    border-radius: 0.3rem;
+    overflow-y: auto;
+    width: 50%;
+    height: 40rem;
+    padding: $space-1;
+  }
+  .BtnContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
