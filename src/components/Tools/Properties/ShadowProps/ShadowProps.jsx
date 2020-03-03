@@ -27,7 +27,7 @@ export default function ShadowProps() {
         minValue={-15}
       />
       <ValueSlider
-        heading="shift horizontically"
+        heading="shift vertically"
         value={shiftVertically}
         handleChange={ChangeShiftVertically}
         maxValue={10}

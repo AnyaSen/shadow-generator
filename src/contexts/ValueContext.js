@@ -11,6 +11,10 @@ export const ValueProvider = ({ children }) => {
   const [blurValue, setBlurValue] = useState(0.625);
   const [opacityValue, setOpacityValue] = useState(0.75);
   const [borderValue, setBorderValue] = useState(0);
+  const [boxColor, setBoxColor] = useState("#f3f3f3");
+  const [shadowColor, setShadowColor] = useState("#999999");
+  const [bgColor, setBgColor] = useState("#fff");
+  const [borderColor, setBorderColor] = useState("#808080");
 
   const ChangeHeightValue = (event, newValue) => {
     setHeightValue(newValue);
@@ -36,6 +40,19 @@ export const ValueProvider = ({ children }) => {
   const ChangeOpacityValue = (event, newValue) => {
     setOpacityValue(newValue);
   };
+  const ChangeBoxColor = newColor => {
+    setBoxColor(newColor.hex);
+  };
+  const ChangeShadowColor = newColor => {
+    setShadowColor(newColor.hex);
+  };
+  const ChangeBgColor = newColor => {
+    setBgColor(newColor.hex);
+  };
+  const ChangeBorderColor = newColor => {
+    setBorderColor(newColor.hex);
+  };
+
   return (
     <ValueContext.Provider
       value={{
@@ -54,7 +71,15 @@ export const ValueProvider = ({ children }) => {
         blurValue,
         ChangeBlurValue,
         opacityValue,
-        ChangeOpacityValue
+        ChangeOpacityValue,
+        boxColor,
+        ChangeBoxColor,
+        ChangeShadowColor,
+        shadowColor,
+        ChangeBgColor,
+        bgColor,
+        ChangeBorderColor,
+        borderColor
       }}
     >
       {children}

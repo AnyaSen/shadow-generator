@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import hexToRgba from "hex-to-rgba";
 
 import Styles from "./ShadowBox.module.scss";
 
@@ -13,18 +14,29 @@ export default function ShadowBox() {
     shiftHorizontically,
     shiftVertically,
     opacityValue,
-    blurValue
+    blurValue,
+    boxColor,
+    shadowColor,
+    bgColor,
+    borderColor
   } = useContext(ValueContext);
+
   return (
-    <div className={Styles.ShadowBoxContainer}>
+    <div
+      className={Styles.ShadowBoxContainer}
+      style={{ backgroundColor: bgColor }}
+    >
       <div
         style={{
           height: `${heightValue}rem`,
           width: `${widthValue}rem`,
-          boxShadow: `${shiftHorizontically}rem  ${shiftVertically}rem ${blurValue}rem rgba(195, 195, 195, ${opacityValue})`,
-          border: `${borderValue}rem solid black`,
+          boxShadow: `${shiftHorizontically}rem ${shiftVertically}rem ${blurValue}rem ${hexToRgba(
+            shadowColor,
+            opacityValue
+          )}`,
+          border: `${borderValue}rem solid ${borderColor}`,
           borderRadius: `${radiusValue}rem`,
-          backgroundColor: "#f3f3f3"
+          backgroundColor: boxColor
         }}
         className={Styles.ShadowBox}
       ></div>

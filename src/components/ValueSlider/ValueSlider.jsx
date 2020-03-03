@@ -15,7 +15,6 @@ function ValueLabelComponent(props) {
 
 export default function ValueSlider({
   heading,
-  defaultValue,
   value,
   handleChange,
   maxValue,
@@ -26,7 +25,6 @@ export default function ValueSlider({
       <Typography gutterBottom>{heading}</Typography>
       <Slider
         ValueLabelComponent={ValueLabelComponent}
-        aria-label="custom thumb label"
         value={value}
         onChange={handleChange}
         max={maxValue}
