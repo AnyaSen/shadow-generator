@@ -9,7 +9,7 @@ export default function Layout({ children }) {
   return (
     <div className={Styles.Layout}>
       <Header />
-      {children}
+      <div className={Styles.childrenContainer}> {children}</div>
       <Footer />
     </div>
   );
