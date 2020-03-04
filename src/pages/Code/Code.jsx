@@ -1,7 +1,9 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Styles from "./Code.module.scss";
+
 import { Link } from "react-router-dom";
 import hexToRgba from "hex-to-rgba";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import { ValueContext } from "../../contexts/ValueContext";
 
@@ -25,11 +27,22 @@ export default function Code() {
     bgColor
   } = useContext(ValueContext);
 
+  const [copyValue, setCopyValue] = useState("");
+  const [copied, setCopied] = useState(false);
+
+  const changeCopied = () => {
+    setCopied(true);
+  };
+
   return (
     <div>
       <Layout>
         <div className={Styles.CodePage}>
-          <div className={Styles.CodeContainer}>
+          <div
+            className={Styles.CodeContainer}
+            id="code"
+            onMouseLeave={e => setCopyValue(e.target.textContent)}
+          >
             <pre className={Styles.code}>
               {`.Container
 { background-color: ${bgColor};
@@ -52,7 +65,12 @@ export default function Code() {
             </pre>
           </div>
           <div className={Styles.BtnContainer}>
-            <SecondaryButton text="Copy" />
+            <CopyToClipboard text={copyValue} onCopy={changeCopied}>
+              <span>
+                <SecondaryButton text="Copy" />
+              </span>
+            </CopyToClipboard>
+
             <Link to="/">
               <Button text="Go back" />
             </Link>
