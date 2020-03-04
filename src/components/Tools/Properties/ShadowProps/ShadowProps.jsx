@@ -17,7 +17,7 @@ export default function ShadowProps() {
   } = useContext(ValueContext);
 
   return (
-    <div className={Styles.ShadowProps}>
+    <div className={Styles.ShadowProps} id="shadow">
       <h1>SHADOW</h1>
       <ValueSlider
         heading="shift horizontically"

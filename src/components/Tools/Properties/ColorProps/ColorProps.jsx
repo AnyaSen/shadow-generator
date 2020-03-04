@@ -19,7 +19,7 @@ export default function ColorProps() {
   } = useContext(ValueContext);
 
   return (
-    <div className={Styles.ColorPropsContainer}>
+    <div className={Styles.ColorPropsContainer} id="color">
       <h1>COLOR</h1>
       <ColorPicker
         header="box"

@@ -10,9 +10,9 @@ import PropertyNav from "./PropertyNav/PropertyNav";
 export default function PropertiesNav() {
   return (
     <div className={Styles.PropertiesNavContainer}>
-      <PropertyNav text="BOX" img={boxSvg} />
-      <PropertyNav text="SHADOW" img={shadowSvg} />
-      <PropertyNav text="COLOR" img={colorSvg} />
+      <PropertyNav text="BOX" img={boxSvg} to="#box" />
+      <PropertyNav text="SHADOW" img={shadowSvg} to="#shadow" />
+      <PropertyNav text="COLOR" img={colorSvg} to="#color" />
     </div>
   );
 }
