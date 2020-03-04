@@ -1,5 +1,11 @@
+@import "../../assets/scss/breakpoints";
+
 .ShadowAppContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @include lg {
+    flex-direction: column;
+  }
 }

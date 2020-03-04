@@ -1,4 +1,5 @@
 @import "../../assets/scss/variables";
+@import "../../assets/scss/breakpoints";
 
 .CodePage {
   display: flex;
@@ -6,8 +7,6 @@
   align-items: center;
 
   h2 {
-    position: absolute;
-    top: 60%;
     color: $color-dark-grey;
   }
 
@@ -16,11 +15,23 @@
     border-radius: 0.3rem;
     overflow-y: auto;
     width: 50%;
-    height: 40rem;
+    height: fit-content;
     padding: $space-1;
+
+    @include lg {
+      width: 70%;
+    }
+
+    @include md {
+      width: 90%;
+    }
 
     .code {
       font-size: $font-md;
+
+      @include sm {
+        font-size: $font-sm;
+      }
     }
   }
 

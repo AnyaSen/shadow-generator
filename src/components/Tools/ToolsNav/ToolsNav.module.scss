@@ -1,4 +1,5 @@
 @import "../../../assets/scss/variables";
+@import "../../../assets/scss/breakpoints";
 
 .ToolsNav {
   display: flex;
@@ -11,4 +12,9 @@
   padding: 0 $space-3;
   box-shadow: $shadow-2;
   width: 45.3%;
+
+  @include lg {
+    position: static;
+    width: 100%;
+  }
 }

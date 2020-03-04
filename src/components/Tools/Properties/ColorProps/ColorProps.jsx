@@ -21,28 +21,30 @@ export default function ColorProps() {
   return (
     <div className={Styles.ColorPropsContainer} id="color">
       <h1>COLOR</h1>
-      <ColorPicker
-        header="box"
-        color={boxColor}
-        handleChange={ChangeBoxColor}
-      />
-      <ColorPicker
-        header="shadow"
-        color={shadowColor}
-        handleChange={ChangeShadowColor}
-      />
-      <ColorPicker
-        header="background"
-        color={bgColor}
-        handleChange={ChangeBgColor}
-      />
-      {borderValue !== 0 ? (
+      <div className={Styles.ColorPickersContainer}>
         <ColorPicker
-          header="border"
-          color={borderColor}
-          handleChange={ChangeBorderColor}
+          header="box"
+          color={boxColor}
+          handleChange={ChangeBoxColor}
         />
-      ) : null}
+        <ColorPicker
+          header="shadow"
+          color={shadowColor}
+          handleChange={ChangeShadowColor}
+        />
+        <ColorPicker
+          header="background"
+          color={bgColor}
+          handleChange={ChangeBgColor}
+        />
+        {borderValue !== 0 ? (
+          <ColorPicker
+            header="border"
+            color={borderColor}
+            handleChange={ChangeBorderColor}
+          />
+        ) : null}
+      </div>
     </div>
   );
 }

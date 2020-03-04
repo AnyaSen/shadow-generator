@@ -3,8 +3,8 @@ import React, { useState, createContext } from "react";
 export const ValueContext = createContext();
 
 export const ValueProvider = ({ children }) => {
-  const [heightValue, setHeightValue] = useState(45);
-  const [widthValue, setWidthValue] = useState(45);
+  const [heightValue, setHeightValue] = useState(30);
+  const [widthValue, setWidthValue] = useState(30);
   const [radiusValue, setRadiusValue] = useState(1);
   const [shiftHorizontically, setShiftHorizontically] = useState(1.25);
   const [shiftVertically, setShiftVertically] = useState(0.85);

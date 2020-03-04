@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 import Styles from "./PropertyNav.module.scss";
 
 export default function PropertyNav({ img, text, to }) {

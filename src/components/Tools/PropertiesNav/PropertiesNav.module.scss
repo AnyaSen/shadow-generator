@@ -1,8 +1,13 @@
+@import "../../../assets/scss/breakpoints";
+
 .PropertiesNavContainer {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
-  height: 80vh;
   align-items: center;
   justify-content: space-around;
+
+  @include lg {
+    display: none;
+  }
 }

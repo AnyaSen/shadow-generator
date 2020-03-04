@@ -1,8 +1,11 @@
+@import "../../assets/scss/breakpoints";
+
 .Layout {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+
   .childrenContainer {
     animation: fadeIn 0.3s ease-in-out;
   }

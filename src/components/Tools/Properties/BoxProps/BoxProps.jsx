@@ -24,14 +24,14 @@ export default function BoxProps() {
         heading="height"
         value={heightValue}
         handleChange={ChangeHeightValue}
-        maxValue={60}
+        maxValue={40}
         minValue={1}
       />
       <ValueSlider
         heading="width"
         value={widthValue}
         handleChange={ChangeWidthValue}
-        maxValue={70}
+        maxValue={40}
         minValue={1}
       />
       <ValueSlider

@@ -1,9 +1,22 @@
 @import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/breakpoints";
 
 .ShadowProps {
   margin: 0 $space-2;
   padding-top: $space-3;
+
   h1 {
     margin-bottom: $space-2;
+  }
+
+  @include lg {
+    width: 45%;
+  }
+  @include md {
+    width: 100%;
+  }
+
+  @include sm {
+    padding-top: $space-2;
   }
 }
