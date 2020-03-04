@@ -32,6 +32,9 @@ export default function Code() {
 
   const changeCopied = () => {
     setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 1000);
   };
 
   return (
@@ -75,6 +78,7 @@ export default function Code() {
               <Button text="Go back" />
             </Link>
           </div>
+          {copied ? <h2>Copied!</h2> : null}
         </div>
       </Layout>
     </div>
