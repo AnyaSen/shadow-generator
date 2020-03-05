@@ -1,11 +1,11 @@
 import React from "react";
 
-import Typography from "@material-ui/core/Typography";
 import Slider from "@material-ui/core/Slider";
 import Tooltip from "@material-ui/core/Tooltip";
 
 function ValueLabelComponent(props) {
   const { children, open, value } = props;
+
   return (
     <Tooltip open={open} enterTouchDelay={0} placement="top" title={value}>
       {children}
@@ -22,7 +22,8 @@ export default function ValueSlider({
 }) {
   return (
     <div>
-      <Typography gutterBottom>{heading}</Typography>
+      <p>{heading}</p>
+
       <Slider
         ValueLabelComponent={ValueLabelComponent}
         value={value}

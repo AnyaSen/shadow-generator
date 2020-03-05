@@ -8,6 +8,7 @@
   color: $color;
   background-color: $bg-color;
   margin: $space-2;
+  width: fit-content;
 
   @include sm {
     font-size: $font-sm;

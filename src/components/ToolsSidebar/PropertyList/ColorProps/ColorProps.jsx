@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import Styles from "./ColorProps.module.scss";
 
-import { ValueContext } from "../../../../contexts/ValueContext";
-
 import ColorPicker from "../../../ColorPicker/ColorPicker";
+
+import { ColorPropertyContext } from "../../../../contexts/ColorPropertyContext";
+import { BoxPropertyContext } from "../../../../contexts/BoxPropertyContext";
 
 export default function ColorProps() {
   const {
@@ -14,29 +15,34 @@ export default function ColorProps() {
     ChangeBgColor,
     bgColor,
     ChangeBorderColor,
-    borderColor,
-    borderValue
-  } = useContext(ValueContext);
+    borderColor
+  } = useContext(ColorPropertyContext);
+
+  const { borderValue } = useContext(BoxPropertyContext);
 
   return (
-    <div className={Styles.ColorPropsContainer} id="color">
+    <div className={Styles.ColorPropsContainer}>
       <h1>COLOR</h1>
+
       <div className={Styles.ColorPickersContainer}>
         <ColorPicker
           header="box"
           color={boxColor}
           handleChange={ChangeBoxColor}
         />
+
         <ColorPicker
           header="shadow"
           color={shadowColor}
           handleChange={ChangeShadowColor}
         />
+
         <ColorPicker
           header="background"
           color={bgColor}
           handleChange={ChangeBgColor}
         />
+
         {borderValue !== 0 ? (
           <ColorPicker
             header="border"

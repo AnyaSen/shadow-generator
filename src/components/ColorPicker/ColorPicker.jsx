@@ -7,6 +7,7 @@ export default function ColorPicker({ header, color, handleChange }) {
   return (
     <div className={Styles.ColorPicker}>
       <p>{header} color</p>
+
       <CompactPicker color={color} onChangeComplete={handleChange} />
     </div>
   );

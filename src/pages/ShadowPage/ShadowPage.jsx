@@ -1,18 +1,17 @@
 import React from "react";
+import Styles from "./ShadowPage.module.scss";
 
 import Layout from "../../components/Layout/Layout";
 import ShadowBox from "../../components/ShadowBox/ShadowBox";
-import Tools from "../../components/Tools/Tools";
+import ToolsSidebar from "../../components/ToolsSidebar/ToolsSidebar";
 
-import Styles from "./ShadowApp.module.scss";
-
-export default function ShadowApp() {
+export default function ShadowPage() {
   return (
     <div>
       <Layout>
         <div className={Styles.ShadowAppContainer}>
           <ShadowBox />
-          <Tools />
+          <ToolsSidebar />
         </div>
       </Layout>
     </div>

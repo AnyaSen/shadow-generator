@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import Styles from "./ShadowProps.module.scss";
-import { ValueContext } from "../../../../contexts/ValueContext";
 
 import ValueSlider from "../../../ValueSlider/ValueSlider";
+
+import { ShadowPropertyContext } from "../../../../contexts/ShadowPropertyContext";
 
 export default function ShadowProps() {
   const {
@@ -14,32 +15,35 @@ export default function ShadowProps() {
     ChangeBlurValue,
     opacityValue,
     ChangeOpacityValue
-  } = useContext(ValueContext);
+  } = useContext(ShadowPropertyContext);
 
   return (
-    <div className={Styles.ShadowProps} id="shadow">
+    <div className={Styles.ShadowProps}>
       <h1>SHADOW</h1>
+
       <ValueSlider
         heading="shift horizontically"
         value={shiftHorizontically}
         handleChange={ChangeShiftHorizontically}
-        maxValue={15}
-        minValue={-15}
+        maxValue={200}
+        minValue={-200}
       />
+
       <ValueSlider
         heading="shift vertically"
         value={shiftVertically}
         handleChange={ChangeShiftVertically}
-        maxValue={10}
-        minValue={-10}
+        maxValue={100}
+        minValue={-100}
       />
+
       <ValueSlider
         heading="blur"
         value={blurValue}
         handleChange={ChangeBlurValue}
-        maxValue={10}
-        minValue={0}
+        maxValue={100}
       />
+
       <ValueSlider
         heading="opacity"
         value={opacityValue}

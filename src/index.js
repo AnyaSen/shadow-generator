@@ -1,16 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { ValueProvider } from "./contexts/ValueContext";
-
 import App from "./App";
 
 import { BrowserRouter } from "react-router-dom";
 
+import { BoxPropertyProvider } from "./contexts/BoxPropertyContext";
+import { ShadowPropertyProvider } from "./contexts/ShadowPropertyContext";
+import { ColorPropertyProvider } from "./contexts/ColorPropertyContext";
+
 ReactDOM.render(
   <BrowserRouter>
-    <ValueProvider>
-      <App />
-    </ValueProvider>
+    <BoxPropertyProvider>
+      <ShadowPropertyProvider>
+        <ColorPropertyProvider>
+          <App />
+        </ColorPropertyProvider>
+      </ShadowPropertyProvider>
+    </BoxPropertyProvider>
   </BrowserRouter>,
   document.getElementById("root")
 );

@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-
 import Styles from "./BoxProps.module.scss";
-import { ValueContext } from "../../../../contexts/ValueContext";
 
 import ValueSlider from "../../../ValueSlider/ValueSlider";
+
+import { BoxPropertyContext } from "../../../../contexts/BoxPropertyContext";
 
 export default function BoxProps() {
   const {
@@ -15,37 +15,39 @@ export default function BoxProps() {
     ChangeBorderValue,
     radiusValue,
     ChangeRadiusValue
-  } = useContext(ValueContext);
+  } = useContext(BoxPropertyContext);
 
   return (
-    <div className={Styles.BoxProps} id="box">
+    <div className={Styles.BoxProps}>
       <h1>BOX</h1>
+
       <ValueSlider
         heading="height"
         value={heightValue}
         handleChange={ChangeHeightValue}
-        maxValue={40}
-        minValue={1}
+        maxValue={350}
+        minValue={16}
       />
+
       <ValueSlider
         heading="width"
         value={widthValue}
         handleChange={ChangeWidthValue}
-        maxValue={40}
-        minValue={1}
+        maxValue={350}
+        minValue={16}
       />
       <ValueSlider
         heading="border"
         value={borderValue}
         handleChange={ChangeBorderValue}
-        maxValue={3}
-        minValue={0}
+        maxValue={12}
       />
+
       <ValueSlider
         heading="border-radius"
         value={radiusValue}
         handleChange={ChangeRadiusValue}
-        maxValue={25}
+        maxValue={175}
       />
     </div>
   );

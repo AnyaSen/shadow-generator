@@ -7,10 +7,8 @@
   p {
     margin-bottom: $space-0;
     margin-top: $space-3;
-  }
 
-  @include lg {
-    p {
+    @include lg {
       margin-top: $space-0;
     }
   }

@@ -19,7 +19,4 @@ h2 {
 
 p {
   font-size: $font-sm;
-  @include sm {
-    font-size: $font-xs;
-  }
 }

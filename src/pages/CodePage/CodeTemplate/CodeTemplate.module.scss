@@ -1,0 +1,10 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/breakpoints";
+
+.code {
+  font-size: $font-md;
+
+  @include sm {
+    font-size: $font-sm;
+  }
+}

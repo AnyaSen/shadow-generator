@@ -31,7 +31,7 @@ button {
   border: none;
   border-radius: $border-radius;
   cursor: pointer;
-  transition: ease-in-out;
+  transition: background-color ease-in-out;
   transition-duration: 0.4s;
 
   &:focus {
@@ -39,7 +39,7 @@ button {
   }
 
   &:hover {
-    transition: ease-in-out;
+    transition: background-color ease-in-out;
     transition-duration: 0.4s;
   }
 }
