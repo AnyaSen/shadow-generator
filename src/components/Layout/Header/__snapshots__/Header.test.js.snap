@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Should contain the correct text 1`] = `
+<div
+  class="Header"
+>
+  <a
+    href="/"
+  >
+    <h1>
+      SHADOW GENERATOR
+    </h1>
+  </a>
+</div>
+`;

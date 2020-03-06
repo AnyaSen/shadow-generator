@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PrimaryButton /> Should have correct text. 1`] = `
+<button
+  class="Button"
+>
+  Generate code
+</button>
+`;

@@ -21,7 +21,7 @@ export default function ValueSlider({
   minValue
 }) {
   return (
-    <div>
+    <div data-testid="Slider">
       <p>{heading}</p>
 
       <Slider

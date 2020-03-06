@@ -5,7 +5,7 @@ import { CompactPicker } from "react-color";
 
 export default function ColorPicker({ header, color, handleChange }) {
   return (
-    <div className={Styles.ColorPicker}>
+    <div className={Styles.ColorPicker} data-testid="ColorPicker">
       <p>{header} color</p>
 
       <CompactPicker color={color} onChangeComplete={handleChange} />

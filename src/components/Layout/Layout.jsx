@@ -6,7 +6,7 @@ import Footer from "./Footer/Footer";
 
 export default function Layout({ children }) {
   return (
-    <div className={Styles.Layout}>
+    <div data-testid="Layout" className={Styles.Layout}>
       <Header />
       <div className={Styles.childrenContainer}>{children}</div>
       <Footer />
