@@ -2,6 +2,7 @@
 
 exports[`<ValueSlider /> Should have correct text and have 2 children. 1`] = `
 <div
+  class="slider"
   data-testid="Slider"
 >
   <p>

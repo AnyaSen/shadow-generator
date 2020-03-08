@@ -1,4 +1,5 @@
 import React from "react";
+import Styles from "./ValueSlider.module.scss";
 
 import Slider from "@material-ui/core/Slider";
 import Tooltip from "@material-ui/core/Tooltip";
@@ -21,7 +22,7 @@ export default function ValueSlider({
   minValue
 }) {
   return (
-    <div data-testid="Slider">
+    <div data-testid="Slider" className={Styles.slider}>
       <p>{heading}</p>
 
       <Slider
