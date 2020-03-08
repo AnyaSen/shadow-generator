@@ -1,0 +1,8 @@
+@import "../../assets/scss/breakpoints";
+
+.slider {
+  width: 90%;
+  @include sm {
+    width: 80%;
+  }
+}
