@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ToolsHeader /> Should have correct text and have 2 children. 1`] = `
+<div
+  class="ToolsNav"
+  data-testid="Header"
+>
+  <h2>
+    TOOLS
+  </h2>
+  <a
+    href="/code"
+  >
+    <button
+      class="Button"
+    >
+      Generate Code
+    </button>
+  </a>
+</div>
+`;

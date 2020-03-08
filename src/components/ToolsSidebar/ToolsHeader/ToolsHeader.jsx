@@ -6,7 +6,7 @@ import Button from "../../Buttons/Button/Button";
 
 export default function ToolsHeader() {
   return (
-    <div className={Styles.ToolsNav}>
+    <div className={Styles.ToolsNav} data-testid="Header">
       <h2>TOOLS</h2>
 
       <Link to="/code">

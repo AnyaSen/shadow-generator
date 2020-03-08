@@ -8,7 +8,7 @@ import Layout from "../../components/Layout/Layout";
 export default function ErrorPage() {
   return (
     <Layout>
-      <div className={Styles.errorContainer}>
+      <div className={Styles.errorContainer} data-testid="Error">
         <h1 className={Styles.error}>Sorry, an error has occured!</h1>
         <Link to="/">
           <SecondaryButton text="Go Back" />

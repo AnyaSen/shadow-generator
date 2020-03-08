@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ShadowBox /> Should have have a child. 1`] = `
+<div
+  class="ShadowBoxContainer"
+  data-testid="Box"
+  style="background-color: rgb(255, 255, 255);"
+>
+  <div
+    class="ShadowBox"
+    style="height: 200px; width: 200px; box-shadow: 20px 14px 10px rgba(153, 153, 153, 12); border: 0px solid #808080; border-radius: 16px; background-color: rgb(243, 243, 243);"
+  />
+</div>
+`;

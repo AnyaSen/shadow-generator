@@ -23,6 +23,7 @@ export default function ShadowBox() {
 
   return (
     <div
+      data-testid="Box"
       className={Styles.ShadowBoxContainer}
       style={{ backgroundColor: bgColor }}
     >

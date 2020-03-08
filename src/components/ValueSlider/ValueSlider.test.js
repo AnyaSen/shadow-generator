@@ -17,6 +17,7 @@ describe("<ValueSlider />", () => {
     const sliderContainer = getByTestId(`Slider`);
 
     expect(header).toBeTruthy();
+
     expect(sliderContainer.children.length).toEqual(2);
 
     expect(container.firstChild).toMatchSnapshot();
