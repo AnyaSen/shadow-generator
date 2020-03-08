@@ -1,0 +1,16 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/breakpoints";
+
+.PropertiesContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: $space-3 $space-3;
+  overflow-y: auto;
+
+  @include lg {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: $space-0 $space-3;
+  }
+}
