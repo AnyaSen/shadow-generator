@@ -3,8 +3,8 @@ import React, { useState, createContext } from "react";
 export const BoxPropertyContext = createContext();
 
 export const BoxPropertyProvider = ({ children }) => {
-  const [heightValue, setHeightValue] = useState(350);
-  const [widthValue, setWidthValue] = useState(350);
+  const [heightValue, setHeightValue] = useState(200);
+  const [widthValue, setWidthValue] = useState(200);
   const [radiusValue, setRadiusValue] = useState(16);
   const [borderValue, setBorderValue] = useState(0);
 
