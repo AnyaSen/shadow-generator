@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CodePage /> Should return 2 or more children. 1`] = `
+<div
+  class="Layout"
+  data-testid="Layout"
+>
+  <div
+    class="Header"
+  >
+    <a
+      href="/"
+    >
+      <h1>
+        SHADOW GENERATOR
+      </h1>
+    </a>
+  </div>
+  <div
+    class="childrenContainer"
+  >
+    <div
+      class="CodePage"
+      data-testid="codePage"
+    >
+      <div
+        class="CodeContainer"
+      >
+        <pre
+          class="code"
+        >
+          .backgroundContainer{ 
+          background-color: #fff
+
+          .shadowBox{
+            height: 200px;
+            width: 200px;
+            box-shadow: 20px 14px 10px rgba(153, 153, 153, 12);
+            border-radius: 16px;
+            background-color: #f3f3f3;
+            
+}
+}
+        </pre>
+      </div>
+      <div
+        class="BtnContainer"
+      >
+        <span>
+          <button
+            class="Button"
+          >
+            Copy
+          </button>
+        </span>
+        <a
+          href="/"
+        >
+          <button
+            class="Button"
+          >
+            Go back
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="Footer"
+  >
+    <p>
+      Created by
+       
+      <a
+        href="https://portfolio-anna-senchikhina.netlify.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Anna Senchikhina
+      </a>
+    </p>
+  </div>
+</div>
+`;

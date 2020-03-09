@@ -9,7 +9,10 @@ export default function ShadowPage() {
   return (
     <div>
       <Layout>
-        <div className={Styles.ShadowAppContainer}>
+        <div
+          className={Styles.ShadowPageContainer}
+          data-testid="shadowPageContainer"
+        >
           <ShadowBox />
           <ToolsSidebar />
         </div>

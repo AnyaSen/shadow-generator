@@ -49,41 +49,39 @@ export default function CodePage() {
   };
 
   return (
-    <div>
-      <Layout>
-        <div className={Styles.CodePage}>
-          <div className={Styles.CodeContainer} ref={codeElement}>
-            <CodeTemplate
-              heightValue={heightValue}
-              widthValue={widthValue}
-              borderValue={borderValue}
-              radiusValue={radiusValue}
-              boxColor={boxColor}
-              shadowColor={shadowColor}
-              borderColor={borderColor}
-              bgColor={bgColor}
-              shiftHorizontically={shiftHorizontically}
-              shiftVertically={shiftVertically}
-              opacityValue={opacityValue}
-              blurValue={blurValue}
-            />
-          </div>
-
-          <div className={Styles.BtnContainer}>
-            <CopyCodeToClipboard
-              copyValue={copyValue}
-              changeCopied={changeCopied}
-              onClick={handleClickCopy}
-            />
-
-            <Link to="/">
-              <Button text="Go back" />
-            </Link>
-          </div>
-
-          {copied ? <h2>Copied!</h2> : null}
+    <Layout>
+      <div className={Styles.CodePage} data-testid="codePage">
+        <div className={Styles.CodeContainer} ref={codeElement}>
+          <CodeTemplate
+            heightValue={heightValue}
+            widthValue={widthValue}
+            borderValue={borderValue}
+            radiusValue={radiusValue}
+            boxColor={boxColor}
+            shadowColor={shadowColor}
+            borderColor={borderColor}
+            bgColor={bgColor}
+            shiftHorizontically={shiftHorizontically}
+            shiftVertically={shiftVertically}
+            opacityValue={opacityValue}
+            blurValue={blurValue}
+          />
         </div>
-      </Layout>
-    </div>
+
+        <div className={Styles.BtnContainer}>
+          <CopyCodeToClipboard
+            copyValue={copyValue}
+            changeCopied={changeCopied}
+            onClick={handleClickCopy}
+          />
+
+          <Link to="/">
+            <Button text="Go back" />
+          </Link>
+        </div>
+
+        {copied ? <h2>Copied!</h2> : null}
+      </div>
+    </Layout>
   );
 }
