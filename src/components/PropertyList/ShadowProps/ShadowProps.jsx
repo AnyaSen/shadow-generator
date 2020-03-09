@@ -18,7 +18,7 @@ export default function ShadowProps() {
   } = useContext(ShadowPropertyContext);
 
   return (
-    <div className={Styles.ShadowProps}>
+    <div className={Styles.ShadowProps} data-testid="shadowProps">
       <h1>SHADOW</h1>
 
       <ValueSlider

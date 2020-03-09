@@ -7,6 +7,7 @@ exports[`<PropertyList /> Should return 3 children 1`] = `
 >
   <div
     class="BoxProps"
+    data-testid="boxProps"
   >
     <h1>
       BOX
@@ -150,6 +151,7 @@ exports[`<PropertyList /> Should return 3 children 1`] = `
   </div>
   <div
     class="ShadowProps"
+    data-testid="shadowProps"
   >
     <h1>
       SHADOW
@@ -293,6 +295,7 @@ exports[`<PropertyList /> Should return 3 children 1`] = `
   </div>
   <div
     class="ColorPropsContainer"
+    data-testid="colorProps"
   >
     <h1>
       COLOR

@@ -18,7 +18,7 @@ export default function BoxProps() {
   } = useContext(BoxPropertyContext);
 
   return (
-    <div className={Styles.BoxProps}>
+    <div className={Styles.BoxProps} data-testid="boxProps">
       <h1>BOX</h1>
 
       <ValueSlider

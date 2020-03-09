@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BoxProps /> Should return 5 children and correct text. 1`] = `
+<div
+  class="BoxProps"
+  data-testid="boxProps"
+>
+  <h1>
+    BOX
+  </h1>
+  <div
+    class="slider"
+    data-testid="Slider"
+  >
+    <p>
+      height
+    </p>
+    <span
+      class="MuiSlider-root MuiSlider-colorPrimary"
+    >
+      <span
+        class="MuiSlider-rail"
+      />
+      <span
+        class="MuiSlider-track"
+        style="left: 0%; width: 55.08982035928144%;"
+      />
+      <input
+        type="hidden"
+        value="200"
+      />
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="350"
+        aria-valuemin="16"
+        aria-valuenow="200"
+        class="MuiSlider-thumb MuiSlider-thumbColorPrimary"
+        data-index="0"
+        role="slider"
+        style="left: 55.08982035928144%;"
+        tabindex="0"
+      />
+    </span>
+  </div>
+  <div
+    class="slider"
+    data-testid="Slider"
+  >
+    <p>
+      width
+    </p>
+    <span
+      class="MuiSlider-root MuiSlider-colorPrimary"
+    >
+      <span
+        class="MuiSlider-rail"
+      />
+      <span
+        class="MuiSlider-track"
+        style="left: 0%; width: 55.08982035928144%;"
+      />
+      <input
+        type="hidden"
+        value="200"
+      />
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="350"
+        aria-valuemin="16"
+        aria-valuenow="200"
+        class="MuiSlider-thumb MuiSlider-thumbColorPrimary"
+        data-index="0"
+        role="slider"
+        style="left: 55.08982035928144%;"
+        tabindex="0"
+      />
+    </span>
+  </div>
+  <div
+    class="slider"
+    data-testid="Slider"
+  >
+    <p>
+      border
+    </p>
+    <span
+      class="MuiSlider-root MuiSlider-colorPrimary"
+    >
+      <span
+        class="MuiSlider-rail"
+      />
+      <span
+        class="MuiSlider-track"
+        style="left: 0%; width: 0%;"
+      />
+      <input
+        type="hidden"
+        value="0"
+      />
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="12"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="MuiSlider-thumb MuiSlider-thumbColorPrimary"
+        data-index="0"
+        role="slider"
+        style="left: 0%;"
+        tabindex="0"
+      />
+    </span>
+  </div>
+  <div
+    class="slider"
+    data-testid="Slider"
+  >
+    <p>
+      border-radius
+    </p>
+    <span
+      class="MuiSlider-root MuiSlider-colorPrimary"
+    >
+      <span
+        class="MuiSlider-rail"
+      />
+      <span
+        class="MuiSlider-track"
+        style="left: 0%; width: 9.142857142857142%;"
+      />
+      <input
+        type="hidden"
+        value="16"
+      />
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="175"
+        aria-valuemin="0"
+        aria-valuenow="16"
+        class="MuiSlider-thumb MuiSlider-thumbColorPrimary"
+        data-index="0"
+        role="slider"
+        style="left: 9.142857142857142%;"
+        tabindex="0"
+      />
+    </span>
+  </div>
+</div>
+`;

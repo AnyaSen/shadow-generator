@@ -21,7 +21,7 @@ export default function ColorProps() {
   const { borderValue } = useContext(BoxPropertyContext);
 
   return (
-    <div className={Styles.ColorPropsContainer}>
+    <div className={Styles.ColorPropsContainer} data-testid="colorProps">
       <h1>COLOR</h1>
 
       <div className={Styles.ColorPickersContainer}>

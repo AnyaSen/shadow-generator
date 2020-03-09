@@ -6,7 +6,7 @@ import PropertyList from "../PropertyList/PropertyList";
 
 export default function ToolsSidebar() {
   return (
-    <div className={Styles.ToolsContainer}>
+    <div className={Styles.ToolsContainer} data-testid="toolsSidebar">
       <ToolsHeader />
       <PropertyList />
     </div>
