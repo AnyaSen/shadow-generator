@@ -10,6 +10,7 @@ Shadow Generator is an app is a tool for developers to generate CSS code for sha
 
 - JavaSctipt
   - React
+  - Jest testing framework
 - HTML
 - CSS
   - Sass
@@ -23,3 +24,7 @@ Shadow Generator is an app is a tool for developers to generate CSS code for sha
 ## How to run
 
 - npm start
+
+## How to run tests
+
+- npm test
