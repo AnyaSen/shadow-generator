@@ -6,22 +6,21 @@ import ErrorPage from "./ErrorPage";
 
 describe("<ErrorPage />", () => {
   afterEach(cleanup);
-
+  const createRenderTree = () => (
+    <BrowserRouter>
+      <ErrorPage />
+    </BrowserRouter>
+  );
   test("Should have correct text and have 2 children.", () => {
-    const { getByText, getByTestId, container } = render(
-      <BrowserRouter>
-        <ErrorPage />
-      </BrowserRouter>
-    );
+    const tree = createRenderTree();
+
+    const { getByText, getByTestId, container } = render(tree);
 
     const heading = getByText("Sorry, an error has occured!");
-
-    expect(heading).toBeTruthy();
-
     const ErrorPageContainer = getByTestId("Error");
 
+    expect(heading).toBeTruthy();
     expect(ErrorPageContainer.children.length).toEqual(2);
-
     expect(container.firstChild).toMatchSnapshot();
   });
 });

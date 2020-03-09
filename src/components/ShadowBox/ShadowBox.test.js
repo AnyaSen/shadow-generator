@@ -10,16 +10,20 @@ import { ColorPropertyProvider } from "../../contexts/ColorPropertyContext";
 describe("<ShadowBox />", () => {
   afterEach(cleanup);
 
+  const createRenderTree = () => (
+    <BoxPropertyProvider>
+      <ShadowPropertyProvider>
+        <ColorPropertyProvider>
+          <ShadowBox />
+        </ColorPropertyProvider>
+      </ShadowPropertyProvider>
+    </BoxPropertyProvider>
+  );
+
   test("Should have have a child.", () => {
-    const { getByTestId, container } = render(
-      <BoxPropertyProvider>
-        <ShadowPropertyProvider>
-          <ColorPropertyProvider>
-            <ShadowBox />
-          </ColorPropertyProvider>
-        </ShadowPropertyProvider>
-      </BoxPropertyProvider>
-    );
+    const tree = createRenderTree();
+
+    const { getByTestId, container } = render(tree);
 
     const ShadowBoxContainer = getByTestId("Box");
 

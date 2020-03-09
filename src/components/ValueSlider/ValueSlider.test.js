@@ -14,10 +14,10 @@ describe("<ValueSlider />", () => {
     );
 
     const header = getByText(`${headerText}`);
+
     const sliderContainer = getByTestId(`Slider`);
 
     expect(header).toBeTruthy();
-
     expect(sliderContainer.children.length).toEqual(2);
 
     expect(container.firstChild).toMatchSnapshot();

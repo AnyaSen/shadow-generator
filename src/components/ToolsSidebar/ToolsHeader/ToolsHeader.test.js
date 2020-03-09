@@ -8,11 +8,14 @@ describe("<ToolsHeader />", () => {
   afterEach(cleanup);
 
   test("Should have correct text and have 2 children.", () => {
-    const { getByText, getByTestId, container } = render(
+    const createRenderTree = () => (
       <BrowserRouter>
         <ToolsHeader />
       </BrowserRouter>
     );
+    const tree = createRenderTree();
+
+    const { getByText, getByTestId, container } = render(tree);
     const hearderText = "TOOLS";
 
     const toolsHeader = getByText(hearderText);

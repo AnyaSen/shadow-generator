@@ -10,16 +10,20 @@ import { ColorPropertyProvider } from "../../contexts/ColorPropertyContext";
 describe("<PropertyList />", () => {
   afterEach(cleanup);
 
+  const createRenderTree = () => (
+    <BoxPropertyProvider>
+      <ShadowPropertyProvider>
+        <ColorPropertyProvider>
+          <PropertyList />
+        </ColorPropertyProvider>
+      </ShadowPropertyProvider>
+    </BoxPropertyProvider>
+  );
+
   test("Should return 3 children", () => {
-    const { getByTestId, container } = render(
-      <BoxPropertyProvider>
-        <ShadowPropertyProvider>
-          <ColorPropertyProvider>
-            <PropertyList />
-          </ColorPropertyProvider>
-        </ShadowPropertyProvider>
-      </BoxPropertyProvider>
-    );
+    const tree = createRenderTree();
+
+    const { getByTestId, container } = render(tree);
 
     const PropertyListContainer = getByTestId(`PropertyList`);
 

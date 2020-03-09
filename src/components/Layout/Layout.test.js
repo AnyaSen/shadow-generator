@@ -4,17 +4,17 @@ import { BrowserRouter } from "react-router-dom";
 
 import Layout from "./Layout";
 
-const createRenderTree = () => (
-  <BrowserRouter>
-    <Layout>
-      <h1>child</h1>
-      <h1>child</h1>
-    </Layout>
-  </BrowserRouter>
-);
-
 describe("<Layout />", () => {
   afterEach(cleanup);
+
+  const createRenderTree = () => (
+    <BrowserRouter>
+      <Layout>
+        <h1>child</h1>
+        <h1>child</h1>
+      </Layout>
+    </BrowserRouter>
+  );
 
   const childrenText = "child";
 
