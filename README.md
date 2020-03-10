@@ -6,6 +6,12 @@ Shadow Generator is an app is a tool for developers to generate CSS code for sha
 
 [Open Demo Version](https://shadow-generator.netlify.com)
 
+## Video demo
+
+<a href="https://vimeo.com/user109027959/review/396782325/05e4b1ef2d" >
+	<img src="./video.png" alt="Video Demo"/>
+</a>
+
 ## Technologies and tools used
 
 - JavaSctipt
@@ -14,6 +20,7 @@ Shadow Generator is an app is a tool for developers to generate CSS code for sha
 - HTML
 - CSS
   - Sass
+- Material UI
 - Netlify
 
 ## How to get locally
