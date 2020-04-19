@@ -8,7 +8,7 @@ Shadow Generator is an app is a tool for developers to generate CSS code for sha
 
 ## Video demo
 
-<a href="https://vimeo.com/user109027959/review/396782325/05e4b1ef2d" >
+<a href="https://vimeo.com/409518150" >
 	<img src="./video.png" alt="Video Demo"/>
 </a>
 
