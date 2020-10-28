@@ -9,6 +9,7 @@
   @include lg {
     display: flex;
     flex-direction: column;
+    margin: 0 $space-0;
     padding: $space-2 0;
 
     h1 {

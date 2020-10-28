@@ -5,15 +5,13 @@
   background-color: $color-tapestry;
   color: $color-white;
   display: flex;
-  padding: $space-3 $space-2;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  z-index: 2;
+  flex: 1;
+  text-align: center;
+
   a {
     text-decoration: underline;
-  }
-
-  @include sm {
-    padding: $space-2;
   }
 }

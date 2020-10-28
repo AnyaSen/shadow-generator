@@ -46,6 +46,28 @@ $screen-xxl: 1599px;
   }
 }
 
+$screen-height-lg: 1500px;
+$screen-height-md: 1000px;
+$screen-height-sm: 700px;
+
+@mixin lg_height {
+  @media (max-height: #{$screen-height-lg}) {
+    @content;
+  }
+}
+
+@mixin md_height {
+  @media (max-height: #{$screen-height-md}) {
+    @content;
+  }
+}
+
+@mixin sm_height {
+  @media (max-height: #{$screen-height-sm}) {
+    @content;
+  }
+}
+
 // Custom devices
 @mixin custom($screen) {
   @media (max-width: $screen+"px") {

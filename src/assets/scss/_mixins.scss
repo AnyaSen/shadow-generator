@@ -10,8 +10,13 @@
   margin: $space-2;
   width: fit-content;
 
+  @include lg {
+    margin: $space-1;
+  }
+
   @include sm {
     font-size: $font-sm;
+    padding: $space-0 $space-1;
   }
 
   &:hover {

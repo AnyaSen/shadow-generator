@@ -2,7 +2,8 @@
 @import "../../assets/scss/breakpoints";
 
 .ColorPicker {
-  margin-top: $space-2;
+  margin: $space-2;
+  margin-bottom: 0;
 
   p {
     margin-bottom: $space-0;
@@ -11,5 +12,10 @@
     @include lg {
       margin-top: $space-0;
     }
+  }
+
+  @include lg {
+    margin: $space-1;
+    margin-bottom: 0;
   }
 }
