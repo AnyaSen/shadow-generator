@@ -4,24 +4,21 @@
 .ToolsContainer {
   display: flex;
   width: 49.6%;
-  height: 85vh;
-  z-index: 1;
+  height: 90vh;
   box-shadow: $shadow-2;
 
   @include lg {
     width: 100%;
     flex-direction: column;
-
-    @include lg_height {
-      height: 65vh;
-    }
-
-    @include md_height {
-      height: 43vh;
-    }
+    position: absolute;
+    bottom: 0;
+    margin-bottom: $space-7;
+    box-shadow: none;
+    height: 43vh;
 
     @include sm_height {
       height: auto;
+      position: static;
     }
   }
 }
