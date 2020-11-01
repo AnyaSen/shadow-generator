@@ -1,6 +1,6 @@
 ## Description
 
-Shadow Generator is an app is a tool for developers to generate CSS code for shadow box.
+Shadow Generator is an app that is a tool for developers to generate CSS code for the shadow box.
 
 ## Demo link
 
