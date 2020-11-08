@@ -1,11 +1,11 @@
 import React from "react";
 import Styles from "./Footer.module.scss";
 
-export default function Footer() {
+export default function Footer({ codePage }) {
   const portfolio_URL = "https://portfolio-anna-senchikhina.netlify.com/";
 
   return (
-    <div className={Styles.Footer}>
+    <div className={codePage ? Styles.FooterCodePage : Styles.Footer}>
       <p>
         Created by{" "}
         <a href={portfolio_URL} target="_blank" rel="noopener noreferrer">

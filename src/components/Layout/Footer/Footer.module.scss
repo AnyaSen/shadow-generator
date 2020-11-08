@@ -24,3 +24,8 @@
     }
   }
 }
+
+.FooterCodePage {
+  @extend .Footer;
+  position: static;
+}

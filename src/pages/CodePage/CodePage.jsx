@@ -49,7 +49,7 @@ export default function CodePage() {
   };
 
   return (
-    <Layout>
+    <Layout codePage>
       <div className={Styles.CodePage} data-testid="codePage">
         <div className={Styles.CodeContainer} ref={codeElement}>
           <CodeTemplate

@@ -11,6 +11,11 @@
   }
 }
 
+.LayoutCodePage {
+  @extend .Layout;
+  justify-content: space-between;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
