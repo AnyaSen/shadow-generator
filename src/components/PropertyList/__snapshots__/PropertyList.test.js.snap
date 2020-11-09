@@ -736,57 +736,65 @@ exports[`<PropertyList /> Should return 3 children 1`] = `
                   style="position: relative; flex: 6;"
                 >
                   <input
+                    id="rc-editable-input-1"
                     spellcheck="false"
                     style="width: 80%; padding: 0px 0px 0px 20%; outline: none; background: none; font-size: 12px; color: rgb(51, 51, 51); height: 16px;"
                     value="#F3F3F3"
                   />
-                  <span
+                  <label
+                    for="rc-editable-input-1"
                     style="display: none;"
                   >
                     hex
-                  </span>
+                  </label>
                 </div>
                 <div
                   style="position: relative; flex: 3;"
                 >
                   <input
+                    id="rc-editable-input-2"
                     spellcheck="false"
                     style="width: 70%; padding: 0px 0px 0px 30%; outline: none; background: none; font-size: 12px; color: rgb(51, 51, 51); height: 16px;"
                     value="243"
                   />
-                  <span
+                  <label
+                    for="rc-editable-input-2"
                     style="position: absolute; top: 3px; left: 0px; line-height: 16px; text-transform: uppercase; font-size: 12px; color: rgb(153, 153, 153);"
                   >
                     r
-                  </span>
+                  </label>
                 </div>
                 <div
                   style="position: relative; flex: 3;"
                 >
                   <input
+                    id="rc-editable-input-3"
                     spellcheck="false"
                     style="width: 70%; padding: 0px 0px 0px 30%; outline: none; background: none; font-size: 12px; color: rgb(51, 51, 51); height: 16px;"
                     value="243"
                   />
-                  <span
+                  <label
+                    for="rc-editable-input-3"
                     style="position: absolute; top: 3px; left: 0px; line-height: 16px; text-transform: uppercase; font-size: 12px; color: rgb(153, 153, 153);"
                   >
                     g
-                  </span>
+                  </label>
                 </div>
                 <div
                   style="position: relative; flex: 3;"
                 >
                   <input
+                    id="rc-editable-input-4"
                     spellcheck="false"
                     style="width: 70%; padding: 0px 0px 0px 30%; outline: none; background: none; font-size: 12px; color: rgb(51, 51, 51); height: 16px;"
                     value="243"
                   />
-                  <span
+                  <label
+                    for="rc-editable-input-4"
                     style="position: absolute; top: 3px; left: 0px; line-height: 16px; text-transform: uppercase; font-size: 12px; color: rgb(153, 153, 153);"
                   >
                     b
-                  </span>
+                  </label>
                 </div>
               </div>
             </div>
@@ -1226,57 +1234,65 @@ exports[`<PropertyList /> Should return 3 children 1`] = `
                   style="position: relative; flex: 6;"
                 >
                   <input
+                    id="rc-editable-input-5"
                     spellcheck="false"
                     style="width: 80%; padding: 0px 0px 0px 20%; outline: none; background: none; font-size: 12px; color: rgb(51, 51, 51); height: 16px;"
                     value="#999999"
                   />
-                  <span
+                  <label
+                    for="rc-editable-input-5"
                     style="display: none;"
                   >
                     hex
-                  </span>
+                  </label>
                 </div>
                 <div
                   style="position: relative; flex: 3;"
                 >
                   <input
+                    id="rc-editable-input-6"
                     spellcheck="false"
                     style="width: 70%; padding: 0px 0px 0px 30%; outline: none; background: none; font-size: 12px; color: rgb(51, 51, 51); height: 16px;"
                     value="153"
                   />
-                  <span
+                  <label
+                    for="rc-editable-input-6"
                     style="position: absolute; top: 3px; left: 0px; line-height: 16px; text-transform: uppercase; font-size: 12px; color: rgb(153, 153, 153);"
                   >
                     r
-                  </span>
+                  </label>
                 </div>
                 <div
                   style="position: relative; flex: 3;"
                 >
                   <input
+                    id="rc-editable-input-7"
                     spellcheck="false"
                     style="width: 70%; padding: 0px 0px 0px 30%; outline: none; background: none; font-size: 12px; color: rgb(51, 51, 51); height: 16px;"
                     value="153"
                   />
-                  <span
+                  <label
+                    for="rc-editable-input-7"
                     style="position: absolute; top: 3px; left: 0px; line-height: 16px; text-transform: uppercase; font-size: 12px; color: rgb(153, 153, 153);"
                   >
                     g
-                  </span>
+                  </label>
                 </div>
                 <div
                   style="position: relative; flex: 3;"
                 >
                   <input
+                    id="rc-editable-input-8"
                     spellcheck="false"
                     style="width: 70%; padding: 0px 0px 0px 30%; outline: none; background: none; font-size: 12px; color: rgb(51, 51, 51); height: 16px;"
                     value="153"
                   />
-                  <span
+                  <label
+                    for="rc-editable-input-8"
                     style="position: absolute; top: 3px; left: 0px; line-height: 16px; text-transform: uppercase; font-size: 12px; color: rgb(153, 153, 153);"
                   >
                     b
-                  </span>
+                  </label>
                 </div>
               </div>
             </div>
@@ -1716,57 +1732,65 @@ exports[`<PropertyList /> Should return 3 children 1`] = `
                   style="position: relative; flex: 6;"
                 >
                   <input
+                    id="rc-editable-input-9"
                     spellcheck="false"
                     style="width: 80%; padding: 0px 0px 0px 20%; outline: none; background: none; font-size: 12px; color: rgb(51, 51, 51); height: 16px;"
                     value="#FFFFFF"
                   />
-                  <span
+                  <label
+                    for="rc-editable-input-9"
                     style="display: none;"
                   >
                     hex
-                  </span>
+                  </label>
                 </div>
                 <div
                   style="position: relative; flex: 3;"
                 >
                   <input
+                    id="rc-editable-input-10"
                     spellcheck="false"
                     style="width: 70%; padding: 0px 0px 0px 30%; outline: none; background: none; font-size: 12px; color: rgb(51, 51, 51); height: 16px;"
                     value="255"
                   />
-                  <span
+                  <label
+                    for="rc-editable-input-10"
                     style="position: absolute; top: 3px; left: 0px; line-height: 16px; text-transform: uppercase; font-size: 12px; color: rgb(153, 153, 153);"
                   >
                     r
-                  </span>
+                  </label>
                 </div>
                 <div
                   style="position: relative; flex: 3;"
                 >
                   <input
+                    id="rc-editable-input-11"
                     spellcheck="false"
                     style="width: 70%; padding: 0px 0px 0px 30%; outline: none; background: none; font-size: 12px; color: rgb(51, 51, 51); height: 16px;"
                     value="255"
                   />
-                  <span
+                  <label
+                    for="rc-editable-input-11"
                     style="position: absolute; top: 3px; left: 0px; line-height: 16px; text-transform: uppercase; font-size: 12px; color: rgb(153, 153, 153);"
                   >
                     g
-                  </span>
+                  </label>
                 </div>
                 <div
                   style="position: relative; flex: 3;"
                 >
                   <input
+                    id="rc-editable-input-12"
                     spellcheck="false"
                     style="width: 70%; padding: 0px 0px 0px 30%; outline: none; background: none; font-size: 12px; color: rgb(51, 51, 51); height: 16px;"
                     value="255"
                   />
-                  <span
+                  <label
+                    for="rc-editable-input-12"
                     style="position: absolute; top: 3px; left: 0px; line-height: 16px; text-transform: uppercase; font-size: 12px; color: rgb(153, 153, 153);"
                   >
                     b
-                  </span>
+                  </label>
                 </div>
               </div>
             </div>
